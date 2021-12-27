@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻的右侧列表</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body{
+            background-color: rgb(166, 166, 194);
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .news-wrapper{
+            width: 300px;
+            height: 358px;
+            background-color: #fff;
+            margin: 50px auto;
+            border-top: 1px solid #ddd;
+        }
+
+        .news-title {
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin: -1px;
+            padding-top: 10px;
+        }
+        .news-title a{
+            color: #404068;
+            font-weight: bold;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-img .img-title{
+            margin-top: -25px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            padding-left: 30px; 
+        }
+        .news-list li{
+            margin-top: 17px;
+            /* padding-left: 14px; */
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: rgb(145, 144, 144);
+        }
+        .news-list li::before{
+            content: '■';
+            color: rgb(167, 164, 164);
+            font-size: 12px;
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">军事</a> ·
+            <a href="#">航空</a>
+        </h2>
+
+        <div class="news-img">
+            <a href="#">
+                <img src="./04.jpg" alt="航母">
+
+                <h3 class="img-title">
+                    美军科幻战舰已经严重锈蚀
+                </h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">海军陆战队狙击手考核要在天上打靶</a>
+            </li>
+    
+            <li>
+                <a href="#">17岁挪威公主登上F16战机完成飞行</a>
+            </li>
+    
+            <li>
+                <a href="#">银川河东国际机场四种模式助晚到旅客成行</a>
+            </li>
+    
+            <li>
+                <a href="#">还没登广告就被买走了 全球私人飞机市场火</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
